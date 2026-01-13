@@ -1,12 +1,12 @@
 :root {
-  --bg: #0b1020;
-  --panel: rgba(255, 255, 255, 0.06);
-  --panel-2: rgba(255, 255, 255, 0.09);
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.68);
-  --border: rgba(255, 255, 255, 0.14);
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-  --radius: 16px;
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --panel-2: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --radius: 12px;
 }
 
 * { box-sizing: border-box; }
@@ -15,11 +15,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   color: var(--text);
-  background:
-    radial-gradient(1200px 600px at 20% 10%, rgba(110, 231, 183, 0.18), transparent 55%),
-    radial-gradient(900px 500px at 80% 20%, rgba(99, 102, 241, 0.18), transparent 55%),
-    radial-gradient(900px 900px at 50% 90%, rgba(236, 72, 153, 0.10), transparent 55%),
-    var(--bg);
+  background: var(--bg);
 }
 
 .container {
@@ -28,7 +24,7 @@ body {
 }
 
 .header {
-  padding: 72px 0 32px;
+  padding: 64px 0 28px;
 }
 
 .badge {
@@ -61,10 +57,10 @@ h1 {
 
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  background: rgba(255, 255, 255, 0.08);
+  background: #f1f5f9;
   padding: 2px 6px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid var(--border);
 }
 
 .cta-row {
@@ -81,15 +77,16 @@ code {
   padding: 11px 14px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
-  color: var(--text);
+  background: var(--text);
   text-decoration: none;
   font-weight: 650;
-  box-shadow: var(--shadow);
+  box-shadow: none;
+  color: #ffffff;
 }
 
 .button.secondary {
   background: transparent;
+  color: var(--text);
   box-shadow: none;
 }
 
@@ -140,7 +137,7 @@ code {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--panel);
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .span-12 {
@@ -172,13 +169,22 @@ code {
   line-height: 1.6;
 }
 
-.link:hover, .button:hover, .badge:hover {
+.link:hover, .badge:hover {
+  background: var(--panel-2);
+}
+
+.button:hover {
+  filter: brightness(0.96);
+}
+
+.button.secondary:hover {
+  filter: none;
   background: var(--panel-2);
 }
 
 .footer {
   padding: 22px 0 40px;
-  border-top: 1px solid rgba(255,255,255,0.10);
+  border-top: 1px solid var(--border);
 }
 
 .footer .container {

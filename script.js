@@ -9,7 +9,7 @@
   if (statusTextEl) statusTextEl.textContent = "Taking on new projects — typically responding within 1–2 business days.";
   if (statusDot) {
     statusDot.style.background = "#34d399";
-    statusDot.style.boxShadow = "0 0 0 4px rgba(52, 211, 153, 0.18)";
+    statusDot.style.boxShadow = "none";
   }
 })();
 
