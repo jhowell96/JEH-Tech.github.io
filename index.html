@@ -3,31 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GitHub Pages — Static Site</title>
-    <meta name="description" content="A simple static site deployed with GitHub Actions to GitHub Pages." />
+    <title>JEH Tech | Software Contracting & Product Development</title>
+    <meta
+      name="description"
+      content="JEH Tech is a software contracting company. We build and maintain web apps, APIs, and internal tools—shipping production-grade software quickly and reliably."
+    />
+    <meta property="og:title" content="JEH Tech | Software Contracting & Product Development" />
+    <meta
+      property="og:description"
+      content="A software contracting company building web apps, APIs, and internal tools. Discovery to delivery, with senior engineering and clear communication."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a class="badge" href="https://pages.github.com/" target="_blank" rel="noreferrer">
-          GitHub Pages
-        </a>
-        <h1>Deployed with GitHub Actions ✅</h1>
+        <a class="badge" href="./">JEH Tech</a>
+        <h1>Software contracting for teams that need results</h1>
         <p class="subhead">
-          This site is static HTML/CSS/JS and ships via your <code>Deploy static content to Pages</code> workflow.
+          JEH Tech is a software contracting company. We partner with startups and established teams to design, build,
+          and maintain web apps, APIs, and internal tools—delivering production-quality software with clear timelines
+          and communication.
         </p>
 
         <div class="cta-row">
-          <a class="button" href="#how-it-works">How it works</a>
-          <a class="button secondary" href="#customize">Customize</a>
+          <a class="button" href="#contact">Talk to JEH Tech</a>
+          <a class="button secondary" href="#services">Our services</a>
         </div>
 
         <div class="status-card" id="status">
           <div class="status-dot" aria-hidden="true"></div>
           <div>
-            <div class="status-title">Status</div>
+            <div class="status-title">Availability</div>
             <div class="status-text">
               <span id="status-text">Loading…</span>
             </div>
@@ -38,50 +47,74 @@
 
     <main class="main">
       <div class="container grid">
-        <section class="card" id="how-it-works">
-          <h2>How it works</h2>
-          <ol class="steps">
-            <li>Push to <code>main</code></li>
-            <li>GitHub Actions uploads the repository as an artifact</li>
-            <li><code>actions/deploy-pages</code> publishes it</li>
-          </ol>
-          <p class="muted">
-            Your workflow uploads <code>path: '.'</code>, so Pages serves whatever is in the repo root — including this
-            <code>index.html</code>.
-          </p>
-        </section>
-
-        <section class="card" id="customize">
-          <h2>Customize</h2>
+        <section class="card" id="services">
+          <h2>Services</h2>
           <ul class="bullets">
-            <li>Edit <code>index.html</code> content</li>
-            <li>Tweak styling in <code>styles.css</code></li>
-            <li>Add simple interactivity in <code>script.js</code></li>
+            <li>Web applications (React, modern frontend stacks)</li>
+            <li>Backend APIs (Node/TypeScript, REST/GraphQL)</li>
+            <li>Internal tools & automation</li>
+            <li>Performance, reliability, and scalability improvements</li>
+            <li>Architecture reviews, refactors, and technical leadership</li>
           </ul>
-          <p class="muted">
-            Want a blog/docs later? You can keep this workflow and add a build step (e.g., Vite/Next static export),
-            then upload the build output instead of <code>'.'</code>.
-          </p>
+          <p class="muted">Have a specific stack? We’ll meet you where you are and recommend the simplest path to ship.</p>
         </section>
 
-        <section class="card">
-          <h2>Quick links</h2>
-          <div class="link-grid">
-            <a class="link" href="https://github.com/" target="_blank" rel="noreferrer">Repository</a>
-            <a class="link" href="https://github.com/features/actions" target="_blank" rel="noreferrer">GitHub Actions</a>
-            <a class="link" href="https://docs.github.com/en/pages" target="_blank" rel="noreferrer">Pages Docs</a>
+        <section class="card" id="how-we-work">
+          <h2>How we work</h2>
+          <ol class="steps">
+            <li><strong>Discovery</strong>: goals, constraints, scope, and success metrics</li>
+            <li><strong>Plan</strong>: milestones, risks, and a delivery timeline</li>
+            <li><strong>Build</strong>: iterative shipping with frequent demos and feedback</li>
+            <li><strong>Launch & support</strong>: monitoring, documentation, and handoff</li>
+          </ol>
+          <p class="muted">You’ll always know what’s happening, what’s next, and what tradeoffs we’re making.</p>
+        </section>
+
+        <section class="card" id="engagements">
+          <h2>Engagement models</h2>
+          <ul class="bullets">
+            <li><strong>Project delivery</strong>: fixed scope with clear milestones</li>
+            <li><strong>Retainer</strong>: ongoing roadmap execution and support</li>
+            <li><strong>Team augmentation</strong>: add senior engineering capacity quickly</li>
+          </ul>
+          <p class="muted">We’ll recommend an engagement based on your goals, risk tolerance, and timeline.</p>
+        </section>
+
+        <section class="card" id="company">
+          <h2>Why JEH Tech</h2>
+          <ul class="bullets">
+            <li><strong>Senior delivery</strong>: pragmatic engineering and strong fundamentals</li>
+            <li><strong>Communication</strong>: weekly updates, concise docs, no surprises</li>
+            <li><strong>Ownership</strong>: we ship, we support, we stand behind the work</li>
+            <li><strong>Maintainability</strong>: clean code, tests where it matters, solid tooling</li>
+          </ul>
+          <p class="muted">We’re a company built to be a reliable partner—not a one-off freelancer experience.</p>
+        </section>
+
+        <section class="card span-12" id="contact">
+          <h2>Contact</h2>
+          <p class="muted" style="margin-top: 0;">
+            Tell us what you’re building and what timeline you’re working against. We’ll respond with next steps and a
+            recommended approach.
+          </p>
+          <div class="cta-row" style="margin-top: 14px;">
+            <a class="button" href="mailto:hello@jeh-tech.com">Email JEH Tech</a>
+            <a class="button secondary" href="#services">View services</a>
           </div>
-          <p class="muted">Tip: after the first successful run, your site URL will appear in the Actions deployment summary.</p>
+          <p class="muted">
+            <strong>Note:</strong> update the email address above if your preferred contact email is different.
+          </p>
         </section>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <span>© <span id="year"></span> Static Site</span>
+        <span>© <span id="year"></span> JEH Tech</span>
         <span class="sep">•</span>
-        <span>Built with plain HTML/CSS/JS</span>
+        <span>Software contracting & product development</span>
       </div>
     </footer>
   </body>
 </html>
+
