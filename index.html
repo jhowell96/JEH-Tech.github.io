@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GitHub Pages — Static Site</title>
+    <meta name="description" content="A simple static site deployed with GitHub Actions to GitHub Pages." />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="badge" href="https://pages.github.com/" target="_blank" rel="noreferrer">
+          GitHub Pages
+        </a>
+        <h1>Deployed with GitHub Actions ✅</h1>
+        <p class="subhead">
+          This site is static HTML/CSS/JS and ships via your <code>Deploy static content to Pages</code> workflow.
+        </p>
+
+        <div class="cta-row">
+          <a class="button" href="#how-it-works">How it works</a>
+          <a class="button secondary" href="#customize">Customize</a>
+        </div>
+
+        <div class="status-card" id="status">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <div class="status-title">Status</div>
+            <div class="status-text">
+              <span id="status-text">Loading…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container grid">
+        <section class="card" id="how-it-works">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li>Push to <code>main</code></li>
+            <li>GitHub Actions uploads the repository as an artifact</li>
+            <li><code>actions/deploy-pages</code> publishes it</li>
+          </ol>
+          <p class="muted">
+            Your workflow uploads <code>path: '.'</code>, so Pages serves whatever is in the repo root — including this
+            <code>index.html</code>.
+          </p>
+        </section>
+
+        <section class="card" id="customize">
+          <h2>Customize</h2>
+          <ul class="bullets">
+            <li>Edit <code>index.html</code> content</li>
+            <li>Tweak styling in <code>styles.css</code></li>
+            <li>Add simple interactivity in <code>script.js</code></li>
+          </ul>
+          <p class="muted">
+            Want a blog/docs later? You can keep this workflow and add a build step (e.g., Vite/Next static export),
+            then upload the build output instead of <code>'.'</code>.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Quick links</h2>
+          <div class="link-grid">
+            <a class="link" href="https://github.com/" target="_blank" rel="noreferrer">Repository</a>
+            <a class="link" href="https://github.com/features/actions" target="_blank" rel="noreferrer">GitHub Actions</a>
+            <a class="link" href="https://docs.github.com/en/pages" target="_blank" rel="noreferrer">Pages Docs</a>
+          </div>
+          <p class="muted">Tip: after the first successful run, your site URL will appear in the Actions deployment summary.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>© <span id="year"></span> Static Site</span>
+        <span class="sep">•</span>
+        <span>Built with plain HTML/CSS/JS</span>
+      </div>
+    </footer>
+  </body>
+</html>
